@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #283048, #859398);
+}
+.calculator{
+  background: rgb(255, 255, 255);
+  width: 400px;
+  height:200%;
+  border-radius: 12px;
+  box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.6);
+}
+.calculator-display{
+  background:black;
+  color:whitesmoke;
+  margin: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.calculator-display h1{
+  margin:0;
+  padding: 25px;
+  font-size: 40px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 100;
+  overflow-x: auto;
+  
+}
+/*customize scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.calculator-buttons{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+button{
+  min-width: 59px;
+  min-height: 50px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 100;
+  font-size: 20px;
+  cursor: pointer;
+  background: rgb(128, 126, 126);
+}
+.operator{
+  background: rgb(58, 55, 55);
+}
+.clear-btn{
+  background: rgb(250, 74, 74);
+}
+.equal-sign{
+  background: rgb(101, 189, 101);
+}
+.plus-sign{
+  grid-column: -2;
+  grid-row: 2 / span 4;
+}
+button:hover{
+  filter: brightness(125%);
+}
+button:focus{
+  outline:none;
+}
+button:active{
+  transform: translateY(1px);
+}
+.clear-btn:hover{
+  filter: brightness(70%);
+}
+.dis{
+  height:150%;
+}
